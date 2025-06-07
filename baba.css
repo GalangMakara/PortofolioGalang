@@ -1,0 +1,621 @@
+@font-face {
+    font-family: Montsserrat;
+    src: url(Montserrat-Italic-VariableFont_wght.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(49, 53, 53, 0.98));
+
+  
+}
+li, a, button {
+    font-family: Montsserrat, sans-serif;
+    text-decoration:  none;
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 10%;
+   align-items: center;
+   background-color: rgb(91, 105, 105);
+   box-shadow: 4px 4px 8px rgb(214, 227, 231);
+   z-index: 1000;
+   top:0;
+   position: sticky;   
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+.logo {
+    cursor: pointer;
+}
+.nav_bar {
+    list-style: none;
+    
+}
+.nav_bar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_bar li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_bar li a:hover {
+    color: rgb(255, 215, 0);
+}
+button {
+    padding: 20px 38px;
+    background-color: rgb(29, 32, 32);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s  ;
+}
+button:hover {
+      opacity: 0.8;
+}
+.beranda {
+    margin:auto;
+    display: flex;
+    margin-bottom: 3px;
+    margin-top: 125px;
+    margin: 18rem 10rem;
+    
+}
+.kolom {
+      margin: 60px;
+      color: #cac7c7a9;
+      overflow: hidden;
+      position: relative;
+      font-size: 15px;
+      margin-top: 8rem;
+
+}
+.kolom .deskripsi {
+    font-size: 35px;
+    color: rgb(230, 230, 230);
+}
+.glg {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  padding: 10px;
+  box-shadow: 0 4px 25px rgb(247, 247, 247, 0.3);
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  width: 38rem;
+  height: 38rem;
+  margin-top: -7%;
+  margin-left: 9rem;
+  max-width: 100%;
+  height: auto;
+}
+.glg:hover{
+  transform: scale(1.1);
+
+}
+.deskripsi .Nama {
+color: rgb(255, 215, 0);
+}
+.deskripsi p {
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+.gerak {
+    position: absolute;
+    opacity: 0;
+    animation: slideVertical  6s infinite;
+    color: rgb(255, 215, 0);
+
+
+    }
+
+    .gerak:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .gerak:nth-child(2) {
+      animation-delay: 2s;
+    }
+
+    .gerak:nth-child(3) {
+      animation-delay: 4s;
+    }
+
+    @keyframes slideVertical {
+    0% {
+    transform: translateY(-100%);
+    opacity: 0;
+    }
+   10% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+   30% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+   40% {
+    transform: translateY(100%);
+    opacity: 0;
+   }
+   100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.btn-cv{
+  color: black;
+    margin-top: 30px;
+    padding-left: 000000px;
+    padding: 13px 30px;
+    background-color:rgb(255, 215, 0);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s  ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    filter: drop-shadow(0 0 20px rgb(87, 100, 50));  
+}
+.btn-cv:hover {
+  opacity: 0.7;
+}
+.social-links i{
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: 0.2rem solid rgb(237, 251, 255);
+  border-radius: 50%;
+  margin: 30px 10px;
+  margin-bottom: -3%;
+  transition: 0.2s linear;
+}
+.social-links i:hover{
+  scale: 1.3;
+  color: rgb(255, 255, 255);
+  background-color:rgb(255, 215, 0);
+  filter: drop-shadow(0 0 15px rgb(61, 73, 28));  
+}
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  background: linear-gradient(to right, rgba(49, 53, 53, 0.98), rgba(0, 0, 0, 1));
+  box-shadow: 0 4px 25px white;
+}
+.about img {
+  height: auto;
+  width: 500px;
+  border-radius: 30px;
+  box-shadow: 0 4px 25px rgb(247, 247, 247, 0.3);
+  max-width: 100%;
+ 
+  
+}
+.about-text {
+  width: 550px;
+}
+.diAbout {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-text h2 {
+  color: white;
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+
+}
+.about-text h5 {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 2px;
+   text-transform: capitalize;
+  margin-bottom: 25px;
+
+}
+.about .Nama {
+  color: rgb(255, 215, 0);
+}
+.about-text p {
+  color: #cac7c7a9;
+  letter-spacing: 1px;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+.about-btn {
+  margin-top: -3%;
+  color: black;
+  padding: 13px 30px;
+  background-color:rgb(255, 215, 0);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s  ;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  filter: drop-shadow(0 0 20px rgb(87, 100, 50));  
+}
+.about-btn:hover {
+  filter: none; 
+}
+html {
+  scroll-behavior: smooth;
+}
+.Skil {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(49, 53, 53, 0.98), rgba(0, 0, 0, 1));
+  padding-bottom: 8rem;
+  padding-left: 8rem;
+  box-shadow: 0 4px 25px white;
+  margin: 2rem;
+  border-radius: 20px;
+}
+.sub-title {
+  font-size: 60px;
+  color: #ffffff;
+  display: block;
+  margin: 3rem 55rem;
+}
+.sub-title .spun {
+    color:rgb(255, 215, 0);
+}
+.Bagianskils {
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: 10rem;
+  color: #ece4e4;
+
+}
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 15%;
+  margin-bottom: 3rem;
+}
+.bar {
+  font-size: 1.5rem; 
+}
+.technical-bars .bar{
+  margin: 40px 0;
+}
+.technical-bars .bar:first-child {
+  margin-top: 0;
+}
+.technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+.technical-bars .bar .indfo{
+  margin-bottom: 5px
+}
+.technical-bars .bar .indfo .listbar {
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+}
+.technical-bars .bar .progses-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+@keyframes animate{
+  100%{
+    transform: scaleX(1);
+  }
+}
+.technical-bars .bar .progses-line .spun {
+  height: 100%;
+  background-color: rgb(255, 215, 0);
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s  1s cubic-bezier(1,0,0.5,1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.progses-line.html .spun {
+  width: 85%;
+}
+.progses-line.css .spun {
+  width: 78%;
+}
+.progses-line.java .spun {
+  width: 75%;
+}
+.progses-line.php .spun {
+  width: 70%;
+}
+.progses-line .spun::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: black;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 3px;
+  top:-28px;
+  right: -20px;
+  animation: showText 0.5s 1s linear forwards;
+  opacity:0;
+}
+.progses-line.html .spun::after {
+  content: "85%";
+}
+.progses-line.css .spun::after {
+  content: "78%";
+}
+.progses-line.java .spun::after {
+  content: "75%";
+}
+.progses-line.php .spun::after {
+  content: "70%";
+}
+.progses-line .spun::before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border:7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: rgb(0, 0, 0);
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.radial-bars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 2.5rem;
+}
+.radial-bars .radial-bar {
+  width: 50%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.radial-bars .radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  height: 160px;
+  width: 120px;
+}
+.radial-bars .radial-bar .progress-bar {
+  stroke-width: 10;
+  stroke: rgb(0, 0, 0);
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+  100%{
+    stroke-dashoffset: -1;
+  }
+}
+.path {
+  stroke-width: 10;
+  stroke: rgb(255, 215, 0);
+  fill: transparent;
+  stroke-dashoffset: 502;
+  stroke-dasharray:502;
+  stroke-linecap: round;
+}
+.path-1{ animation: animate-path1 1s 1s linear forwards;}
+.path-2{ animation: animate-path2 1s 1s linear forwards;}
+.path-3{ animation: animate-path3 1s 1s linear forwards;}
+.path-4{ animation: animate-path4 1s 1s linear forwards;}
+
+@keyframes animate-path1 {
+  100%{
+    stroke-dashoffset: 200;
+  }
+}
+@keyframes animate-path2 {
+  100%{
+    stroke-dashoffset: 150;
+  }
+}
+@keyframes animate-path3 {
+  100%{
+    stroke-dashoffset: 100;
+  }
+}
+@keyframes animate-path4 {
+  100%{
+    stroke-dashoffset: 50;
+  }
+}
+.radial-bar .percentage {
+ position: absolute;
+ top:50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ font-size: 17px;
+ font-weight:500;
+ animation: showText 0.5s 1s linear forwards;
+ opacity: 0;
+}
+.progress-bar .textskil {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: -5px;
+  transform: translate(-50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .beranda {
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 2rem;
+  }
+  .glg {
+    margin-left: 0;
+    margin-top: 2rem;
+    width: 22rem;
+    height: 22rem;
+  }
+  .sub-title {
+    margin: 3rem 2rem;
+    font-size: 40px;
+    text-align: center;
+  }
+  .Bagianskils {
+    margin-left: 0;
+    padding: 40px 10px;
+    width: 100%;
+    height: auto;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .diAbout {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .about img {
+    width: 90vw;
+    max-width: 350px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px 2%;
+  }
+  .nav_bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(91, 105, 105);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1001;
+  }
+  .nav_bar.active {
+    display: flex;
+  }
+  .nav_bar li {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1002;
+  }
+  .btn-cntc {
+    display: none;
+  }
+  .beranda {
+    margin: 6rem 1rem;
+  }
+  .kolom {
+    margin: 2rem 0;
+    font-size: 14px;
+  }
+  .glg {
+    width: 16rem;
+    height: 16rem;
+  }
+  .about-text h2 {
+    font-size: 32px;
+  }
+  .about-text h5 {
+    font-size: 18px;
+  }
+  .Skil {
+    flex-direction: column;
+    padding-left: 1rem;
+    margin: 1rem;
+  }
+  .Bagianskils {
+    padding: 30px 5px;
+  }
+  .radial-bars {
+    flex-direction: column;
+    align-items: center;
+  }
+  .radial-bars .radial-bar {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .beranda {
+    margin: 3rem 0.5rem;
+  }
+  .kolom .deskripsi {
+    font-size: 22px;
+  }
+  .glg {
+    width: 10rem;
+    height: 10rem;
+  }
+  .about img {
+    max-width: 90vw;
+  }
+  .about-text h2 {
+    font-size: 24px;
+  }
+  .about-text h5 {
+    font-size: 14px;
+  }
+  .sub-title {
+    font-size: 28px;
+    margin: 2rem 0.5rem;
+  }
+}
+
+
+
+
+
